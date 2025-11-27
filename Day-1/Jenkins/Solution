@@ -1,0 +1,7 @@
+Answer: Go through these docs to setup jenkins using yum utility
+
+https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos
+
+When done with installing jenkins, 
+
+ open ui, install recommended packages and set up admin user as per given details
