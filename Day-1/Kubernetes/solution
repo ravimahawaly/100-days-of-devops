@@ -1,0 +1,21 @@
+==> Login to your kubernetes cluster master node
+Run commands:
+#  kubectl get nodes
+#  vim pod-nginx.yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-nginx
+  labels:
+    app: nginx_app
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
+:wq!
+
+# kubectl apply -f pod-nginx.yml
+#  kubectl get pods
+# kubectl get pods -o wide
+# kubectl exec -it <pod-id> -- /bin/bash
+  curl http://<pod-ip>:80  ==> you will see your nginx running
