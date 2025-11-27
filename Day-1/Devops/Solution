@@ -1,0 +1,7 @@
+Login to app-server-1 from jump host using given credentials:
+
+# ssh tony@app-server-1
+Enter password:
+# sudo useradd jack -s /sbin/nologin   ==> this will create user jack with non-interactive shell
+# sudo id jack
+# sudo grep jack /etc/passwd
